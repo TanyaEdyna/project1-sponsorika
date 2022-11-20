@@ -1,0 +1,180 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root {
+    --head-title-color: #86B71E;
+    --main-title-accent-color: #92AC6D; 
+    --button-color: #BDD58A;
+    --main-text-color: #231F20;
+    --property-text-color: #747273;
+    --hover-link-color:#0a85f7;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
+    outline: 2px solid teal;
+}
+/* HEADER */
+.color-wrap {
+    background-image: linear-gradient(rgba(178, 240, 165, 0.194), rgba(40, 131, 40, 0.4));
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  
+}
+.nav-list {
+    display: flex;
+    
+   
+}
+.nav-item {
+    padding-top: 46px;
+    padding-bottom: 40px;
+}
+.nav-item:hover,
+.nav-item:focus {
+    /* color: var(--hover-link-color);
+        cursor: pointer; */
+        /* зробити, щоб ширина hover при наведенні була більша */
+}
+.nav-item:not(:last-child),
+.contacts-item:not(:last-child) {
+    margin-right: 30px;
+}
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    transition: color 250ms linear;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--hover-link-color);
+     cursor: pointer;
+}
+.logo {
+    display: block;
+    background-image: url(../image/sponsorika-logo.svg);
+    width: 160px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: center;    
+    
+}
+.logo-wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logo:focus {
+    cursor: pointer;
+}
+.contacts-list {
+    display: flex;
+   
+}
+.contacts-link {
+    display: flex;
+    align-items: center;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.00;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);  
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    transition: color 250ms linear;
+}
+.contacts-link:hover,
+.contacts-link:focus
+{
+    color: var(--hover-link-color);
+    cursor: pointer;    
+}
+.contacts-item {
+padding-top: 46px;
+padding-bottom: 40px;
+}
+.contacts-icon {
+    fill: currentColor;
+  
+}
+/* HERO */
+.hero-title {
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.14;
+    text-align: center;
+
+   
+}
+.hero-text {
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hero-title-color {
+    color: var(--head-title-color);
+}
+
+/* FOOTER */
+
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.soc-list {
+    display: flex;
+}

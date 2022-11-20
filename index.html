@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Благодійний фонд «Спонсорика»</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,91 +18,232 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Про Фонд</a>
-          </li>
-          <li>
-            <a href="">Онлайн Звітність</a>
-          </li>
-          <li>
-            <a href="">Документи про реєстрацію</a>
-          </li>
-        </ul>
-      </nav>
-      <img src="./image/sponsorika-logo.svg" alt="Логотип фонду" />
-      <ul>
-        <li>
-          <a href="tel:+380503307116">+380503307116</a>
-        </li>
-        <li>
-          <a href="mailto:info@sponsorika.in.ua">info@sponsorika.in.ua</a>
-        </li>
-      </ul>
-      <section class="hero">
-        <h1>Благодійний фонд «Спонсорика»</h1>
-        <p>допомагаємо постраждалим під час війни з 2015 року</p>
-        <ul>
-          <li>
-            <p>Мені потрібна допомога</p>
-            <a href=""><button type="button">Заповнити форму</button></a>
-          </li>
-          <li>
-            <p>Хочу допомогти</p>
-            <a href=""><button type="button">Заповнити форму</button></a>
-          </li>
-        </ul>
-      </section>
+    <header class="color-wrap">
+      <div class="container">
+        <div class="header-wrap">
+          <div class="logo-wrap"><a class="logo" href=""></a></div>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Про Фонд</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://5q8d.short.gy/DPqLSo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Онлайн Звітність</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Документи про реєстрацію</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="link contacts-link" href="tel:+380503307116">
+                <svg class="contacts-icon" width="10" height="15">
+                  <use href="./image/icons.svg#icon-smartphone"></use>
+                </svg>
+                +380503307116
+              </a>
+            </li>
+            <li class="contacts-item">
+              <a class="link contacts-link" href="mailto:info@sponsorika.in.ua">
+                <svg class="contacts-icon" width="16" height="12">
+                  <use href="./image/icons.svg#icon-letter"></use>
+                </svg>
+                info@sponsorika.in.ua</a
+              >
+            </li>
+          </ul>
+        </div>
+        <section class="hero">
+          <h1 class="hero-title"><span class="hero-title-color">Благодійний</span> <br> фонд «Спонсорика»</h1>
+          <p class="hero-text">допомагаємо постраждалим під час війни з 2015 року</p>
+          <ul>
+            <li>
+              <p>Мені потрібна допомога</p>
+              <a href=""><button type="button">Заповнити форму</button></a>
+            </li>
+            <li>
+              <p>Хочу допомогти</p>
+              <a href=""><button type="button">Заповнити форму</button></a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </header>
     <main>
       <section>
-        <h2>Допомога Україні</h2>
-        <h3>Україна починається з тебе.</h3>
-        <ol>
-          <li>
-            Чиста країна. Якщо десь побачили безлад - організуйте людей, щоб
-            навести порядок. Чиста територія - це завдання кожної громади.
-          </li>
-          <li>
-            Допомога поруч. Якщо десь поряд є ті люди, хто потребує допомоги -
-            не вагайтесь - допоможіть їм. Всі добрі справи вам повернуться.
-          </li>
-          <li>
-            Купуйте українське. Якщо є вибір, що придбавати - іноземне, чи
-            українське - віддавайте перевагу українським виробникам, особливо
-            тим, хто знаходиться в небезпечних районах ведення бойових дій.
-          </li>
-        </ol>
-        <ul>
-          <img src="./image/ukraine.jpg" alt="площа в Києві" width="480" />
-        </ul>
+        <!-- Допомога Україні -->
+       <div class="container">
+          <h2>Допомога Україні</h2>
+          <h3>Україна починається з тебе.</h3>
+          <ul>
+            <li>
+              <svg width="30" height="40">
+                <use href="./image/icons.svg#icon-number1"></use>
+              </svg>
+              <span>Чиста країна.</span> Якщо десь побачили безлад - організуйте
+              людей, щоб навести порядок. Чиста територія - це завдання кожної
+              громади.
+            </li>
+            <li>
+              <svg width="30" height="40">
+                <use href="./image/icons.svg#icon-number2"></use>
+              </svg>
+              <span>Допомога поруч.</span> Якщо десь поряд є ті люди, хто потребує
+              допомоги - не вагайтесь - допоможіть їм. Всі добрі справи вам
+              повернуться.
+            </li>
+            <li>
+              <svg width="30" height="40">
+                <use href="./image/icons.svg#icon-number3"></use>
+              </svg>
+              <span>Купуйте українське.</span> Якщо є вибір, що придбавати -
+              іноземне, чи українське - віддавайте перевагу українським
+              виробникам, особливо тим, хто знаходиться в небезпечних районах
+              ведення бойових дій.
+            </li>
+          </ul>
+          <ul>
+            <img src="./image/ukraine.jpg" alt="площа в Києві" width="580" />
+          </ul>
+       </div>
       </section>
       <section>
-        <h2>Чому допомога важлива?</h2>
-        <ul>
-          <li>
-            <p>
-              «Коли попадеш на небеса у тебе буде лише те, що ти віддав іншим
-              при житті».
-            </p>
-            <p>
-              Сьогодні багато хто потребує допомоги. Через Фонд «Спонсорика»
-              можливо допомоги та бути впевненим, що допомога дійде відповідним
-              чином. Репутація коштує дорожче, ніж гроші. Якщо у вас є чим
-              допомогти, може ви не знаєте кому потрібна така допомога,
-              заповніть форму та отримайте значок «Волонтер».
-            </p>
-          </li>
-          <li>
-            <img src="" alt="" />
-          </li>
-        </ul>
+        <!-- Чому допомога важлива -->
+        <div class="container">
+          <h2>Чому допомога важлива?</h2>
+          <ul>
+            <li>
+              <p>
+                «Коли попадеш на небеса у тебе буде лише те, що ти віддав іншим
+                при житті».
+              </p>
+              <p>
+                Сьогодні багато хто потребує допомоги. Через Фонд «Спонсорика»
+                можливо допомоги та бути впевненим, що допомога дійде відповідним
+                чином. Репутація коштує дорожче, ніж гроші. Якщо у вас є чим
+                допомогти, може ви не знаєте кому потрібна така допомога,
+                заповніть форму та отримайте значок «Волонтер».
+              </p>
+            </li>
+            <li>
+              <img
+                src="./image/help-ukraine.jpg"
+                alt="український вийськовий"
+                width="580"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <!-- Реквізити фонду -->
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container footer-wrap">
+        <a class="logo" href=""></a>
+
+        <address>
+          <ul>
+            <li>
+              <a
+                href="https://goo.gl/maps/kPJPxhrvLwBRXQdn8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="18" height="16">
+                  <use href="./image/icons.svg#icon-location"></use>
+                </svg>
+                м.Київ, Деревообробна, 9</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380503307116">
+                <svg width="10" height="15">
+                  <use href="./image/icons.svg#icon-smartphone"></use>
+                </svg>
+                +380503307116
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@sponsorika.in.ua">
+                <svg width="16" height="12">
+                  <use href="./image/icons.svg#icon-letter"></use>
+                </svg>
+                info@sponsorika.in.ua</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <a
+          href="https://www.sponsorika.in.ua/oferta/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Публічна оферта
+        </a>
+
+        <ul class="soc-list">
+          <li>
+            <a href="#">
+              <svg width="28" height="28">
+                <use href="./image/icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="28" height="28">
+                <use href="./image/icons.svg#icon-viber"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="28" height="28">
+                <use href="./image/icons.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="28" height="28">
+                <use href="./image/icons.svg#icon-mastercard"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="28" height="28">
+                <use href="./image/icons.svg#icon-visa"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
