@@ -42,6 +42,9 @@ button {
     --main-text-color: #231F20;
     --property-text-color: #747273;
     --hover-link-color:#0a85f7;
+    --white-color:#ffffff;
+    --text-form-color: #272727;
+
 }
 .container {
     width: 1200px;
@@ -49,7 +52,7 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
-    outline: 2px solid teal;
+    /* outline: 2px solid teal; */
 }
 /* HEADER */
 .color-wrap {
@@ -59,7 +62,7 @@ button {
 .header-wrap {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 110px;
     align-items: center;
   
 }
@@ -151,9 +154,8 @@ padding-bottom: 40px;
     font-weight: 700;
     font-size: 50px;
     line-height: 1.14;
-    text-align: center;
-
-   
+    text-align: center;  
+    padding-bottom: 28px;
 }
 .hero-text {
     color: #000000;
@@ -161,11 +163,48 @@ padding-bottom: 40px;
     font-size: 20px;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 32px;
 }
-
 .hero-title-color {
     color: var(--head-title-color);
 }
+.hero-list {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    padding-bottom: 110px;
+}
+.hero-item {
+    width: 555px;
+    height: 195px;
+    background-color: var(--white-color);
+    border-radius: 30px;
+    box-shadow: 0px 30px 70px 0px rgb(0 0 0 / 15%);
+
+}
+
+.hero-uptitle {
+    text-align: center;
+    color: var(--text-form-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 30px 0;
+}
+.hero-button {
+    display: block;
+    margin: 0 auto;
+    width: 243px;
+    height: 55px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 100px;
+    
+}
+
 
 /* FOOTER */
 
@@ -174,6 +213,7 @@ padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+  
 }
 
 .soc-list {
